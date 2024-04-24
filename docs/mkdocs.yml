@@ -1,3 +1,52 @@
 site_name: My Docs
 theme:
   name: material
+  palette:
+    primary: indigo
+    accent: indigo  
+nav:
+  - Home: index.md
+  - About: about.md
+  - Contact: contact.md
+
+  - Blog: blog.md
+  - Blog2: blog2.md
+
+  - Sub1:
+    - Sub11: sub11.md
+    - Sub12: sub12.md
+
+  - Sub2:
+    - Sub21: sub21.md
+    - Sub22: sub22.md
+
+
+  - toc: toc.md
+
+  - txt: txt.md
+  - pdf: pdf.md
+  - docx: docx.md
+  - xlsx: xlsx.md
+  - pptx: pptx.md
+
+  - img: img.md
+  
+  - video: video.md  
+
+  
+  - audio: audio.md
+
+
+  - code: code.md
+  
+
+  - link: link.md
+
+
+  - math: math.md
+
+
+  - table: table.md
+
+
+  - quote: quote.md
