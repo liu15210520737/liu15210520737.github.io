@@ -4,6 +4,114 @@ theme:
   palette:
     primary: indigo
     accent: indigo
+    scheme: default
+
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+  features:
+    - navigation.tabs
+    - navigation.instant
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - toc.integrate
+    - search.highlight
+    - search.share
+    - header.autohide
+    - content.code.annotate
+    - content.typography.unicode
+    - content.tabs.link
+    - content.comments
+    - codehilitetheme.material
+
+plugins:
+  - search
+  - macros:
+      module_name: macros
+
+  - minify:
+      minify_html: true
+      minify_js: true
+      minify_css: true
+
+  - git-revision-date-localized:
+      type: date
+      locale: en_US
+      fallback_to_build_date: true
+
+  - section-index:
+      toc_level: 2
+      toc_expand: false
+      auto_section_number: true
+
+  - pdf-export:
+      verbose: true
+      author: liu15210520737
+      copyright: liu15210520737
+      toc_depth: 2
+      cover_title: My Docs
+      cover_subtitle: My Docs
+      cover_logo: logo.png
+      cover_page_number: true
+      cover_first_page: true
+      cover_last_page: true
+      page_numbers: true
+      break_level: 2
+      break_side: even
+      break_first_page: true
+      break_last_page: true
+      break_blank_page: true
+      break_header_footer: true
+      break_font_size: 12
+      break_font_color: black
+      break_font_family: Arial
+      break_header_left: My Docs
+      break_header_center: Page
+      break_header_right: {{ page_number }}
+      break_footer_left: {{ page_number }}
+      break_footer_center: My Docs
+      break_footer_right: {{ page_number }}
+      break_footer_spacing: 10
+      break_footer_font_size: 12
+      break_footer_font_color: black
+      break_footer_font_family: Arial
+      break_background_color: white
+      break_background_image: background.png
+      break_background_position: center
+      break_background_repeat: no-repeat
+      break_background_size: cover
+      break_background_opacity: 1.0
+      break_header_font_size: 12
+      break_header_font_color: black
+      break_header_font_family: Arial
+      break_header_spacing: 10
+      break_header_line: true
+      break_header_line_color: black
+      break_header_line_width: 1
+      break_footer_line: true
+      break_footer_line_color: black
+      break_footer_line_width: 1
+      break_page_margin: 20
+      break_page_size: A4
+      break_page_orientation: portrait
+      break_page_header: ''
+      break_page_footer: ''
+      break_page_header_spacing: 10
+      break_page_footer_spacing: 10
+      break_page_header_font_size: 12
+      break_page_header_font_color: black
+      break_page_header_font_family: Arial
+      break_page_header_line: true
+      break_page_header_line_color: black
+      break_page_header_line_width: 1
+      break_page_footer_font_size: 12
+      break_page_footer_font_color: black
+      break_page_footer_font_family: Arial
+      break_page_footer_line: true
+      break_page_footer_line_color: black
+      break_page_footer_line_width: 1
 
 markdown_extensions:
   - toc:
@@ -30,6 +138,9 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
+  - pymdownx.snippets
+  - pymdownx.highlight:
+      linenums: true
 nav:
   - Home: index.md
   - About: about.md
